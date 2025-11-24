@@ -1,0 +1,8 @@
+Approach,Training Strategy,Parameters Trained,GPU Requirements,Training Time,Languages Supported,Training Data Required,Frozen Components,Key Innovation
+mCLIP (TriKD),Triangle Knowledge Distillation with frozen CLIP+XLM-R,~3% (projectors only),8x V100 (32GB),~15 epochs on CC3M,100+ (via XLM-R),120M-175M parallel sentences + CC3M/CC12M,"CLIP image encoder, CLIP text encoder, XLM-R base",Triangle alignment via contrastive distillation
+AltDiffusion,Two-stage: AltCLIP training + Diffusion fine-tuning,~50% (text encoder + cross-attn),~128 A100 equivalent,~1 week on large dataset,18 languages,Large multilingual LAION subset,Only during Stage 1,Knowledge distillation for multilingual encoder
+IAP (Image-as-Pivot),Freeze all except Chinese text encoder,~10% (text encoder only),Lower than full fine-tuning,Hours to days,Chinese (extendable),5-10% of full training data,"Diffusion UNet, image encoder",Images as semantic pivots for alignment
+MuLan,Language adapter training (~20M params),20M adapter,Minimal,<1 day,110+ languages,Readily available encoders,Text encoder + diffusion model,Lightweight language adapters
+CAPIVARA,Efficient multilingual CLIP for low-resource,Varies,Lower than baseline,Efficient,Low-resource focus,Small dataset,CLIP image encoder,Cost-efficient low-resource adaptation
+PEA-Diffusion,Parameter-efficient adapter with KD (6M params),6M adapter,Moderate,Hours,Any language,Small parallel corpus,Diffusion UNet,Task-specific adapter with minimal params
+Full Fine-tuning (Baseline),Full model retraining from scratch,100% (all parameters),128+ A100 GPUs,1+ weeks,Depends on data,Billions of image-text pairs,None,Full parameter optimization
