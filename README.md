@@ -2,9 +2,6 @@
 
 **A comprehensive comparison of multilingual text-to-image generation techniques with emphasis on parameter-efficient training methods**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![arXiv](https://img.shields.io/badge/arXiv-2XXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXXX)
-
 ## 📋 Overview
 
 This repository contains the implementation, experimental results, and comprehensive analysis of various cross-lingual adaptation techniques for frozen diffusion models. We critically compare multiple approaches including:
