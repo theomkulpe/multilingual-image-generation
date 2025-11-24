@@ -1,0 +1,62 @@
+# Core dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Transformers and model libraries
+transformers>=4.30.0
+diffusers>=0.18.0
+accelerate>=0.20.0
+sentence-transformers>=2.2.0
+
+# Data processing
+datasets>=2.13.0
+Pillow>=9.5.0
+opencv-python>=4.7.0
+numpy>=1.24.0
+scipy>=1.10.0
+scikit-learn>=1.2.2
+
+# Evaluation metrics
+pytorch-fid>=0.3.0
+lpips>=0.1.4
+clip-benchmark>=1.0.0
+
+# Training utilities
+wandb>=0.15.4
+tensorboard>=2.13.0
+tqdm>=4.65.0
+
+# Configuration and utilities
+pyyaml>=6.0
+omegaconf>=2.3.0
+hydra-core>=1.3.0
+
+# Optimization libraries (optional)
+apex  # For LAMB optimizer and mixed precision
+deepspeed>=0.9.0  # For distributed training
+flash-attn>=2.0.0  # For efficient attention
+
+# Data downloading and processing
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Multilingual text processing
+sentencepiece>=0.1.99
+sacremoses>=0.0.53
+ftfy>=6.1.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Development dependencies
+pytest>=7.3.0
+black>=23.3.0
+flake8>=6.0.0
+mypy>=1.3.0
+
+# Optional: AWS/Cloud storage
+boto3>=1.26.0  # For S3 access
+google-cloud-storage>=2.9.0  # For GCS access
